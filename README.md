@@ -64,6 +64,28 @@ All analytics rely on **2+ table JOINs**, designed to answer meaningful business
   - Conditional formatting for min/max  
 - Example console log:
   ```text
-  Created file excel_20251006_112530.xlsx, 6 sheets, 1234 rows
-  Full path: /exports/excel_20251006_112530.xlsx
+  Created file analytics_data.xlsx, 6 sheets
+  Full path: /exports/analytics_data.xlsx
+
+## Libraries Used
+
+This project relies on the following Python libraries:
+
+| Library | Purpose |
+|----------|----------|
+| **pandas** | Data manipulation, SQL query results handling |
+| **matplotlib** | Static chart generation (pie, bar, line, histogram, scatter) |
+| **plotly** | Interactive visualizations (time slider animation) |
+| **sqlalchemy** | Database connection and query execution |
+| **psycopg2** | PostgreSQL driver for SQLAlchemy |
+| **openpyxl** | Excel export with conditional formatting and filters |
+| **numpy** | Numerical computations and percentile capping |
+
+### Installation
+
+You can install all dependencies with:
+```bash
+pip install pandas matplotlib plotly sqlalchemy psycopg2 openpyxl numpy
+
+  
 
