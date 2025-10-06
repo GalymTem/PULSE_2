@@ -90,10 +90,7 @@ pip install pandas matplotlib plotly sqlalchemy psycopg2 openpyxl numpy
 ## Excel Data Export — Datasets + Summaries + Profiles
 
 This repository includes a rich Excel exporter that pulls data via your existing SQL queries (from `queries.sql`) and writes a single workbook with:
-- **Data** sheet per dataset (frozen header, filters, auto column widths, numeric color scale, currency/percent/date formats);
-- **Summary** sheet (KPIs per dataset; smart formatting for % and dates);
-- **Profile** sheet (dtype, missing %, uniques, numeric quantiles / top categories);
-- A master **Index** sheet linking everything.
+
 
 ### Files
 - `export_excel_datasets.py` — the exporter (uses `analytics.fetch_df()` and `EXPORTS_DIR`)
