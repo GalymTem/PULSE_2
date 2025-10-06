@@ -15,9 +15,9 @@ It demonstrates an end-to-end analytical pipeline:
 ---
 
 ## 📊 Main Analytics (Screenshots)
-![Pie Chart](charts/pie_genre_revenue.png)  
-![Bar Chart](charts/bar_top_artists.png)  
-![Horizontal Bar](charts/barh_aov_country.png)  
+![Pie Chart](charts/01_pie_revenue_by_category.png)  
+![Bar Chart](charts/02_bar_top_sellers_by_revenue.png)  
+![Horizontal Bar](charts/06_duration_by_genre_strip.png)  
 
 ---
 
