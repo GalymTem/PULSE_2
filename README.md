@@ -39,9 +39,9 @@ It includes:
 All analytics rely on **2+ table JOINs**, designed to answer meaningful business questions such as:
 - Revenue share by genre  
 - Top-performing artists by total revenue  
-- Average order value by country  
-- Monthly revenue growth trend  
-- Track duration distribution  
+- average revenue by category
+- line revenue 2010-1014
+- histogram invoice value distribution
 - Correlation between price and duration (top genres)
 
 ### Static Reporting (matplotlib)
