@@ -87,5 +87,26 @@ You can install all dependencies with:
 ```bash
 pip install pandas matplotlib plotly sqlalchemy psycopg2 openpyxl numpy
 
+## Excel Data Export — Datasets + Summaries + Profiles
+
+This repository includes a rich Excel exporter that pulls data via your existing SQL queries (from `queries.sql`) and writes a single workbook with:
+- **Data** sheet per dataset (frozen header, filters, auto column widths, numeric color scale, currency/percent/date formats);
+- **Summary** sheet (KPIs per dataset; smart formatting for % and dates);
+- **Profile** sheet (dtype, missing %, uniques, numeric quantiles / top categories);
+- A master **Index** sheet linking everything.
+
+### Files
+- `export_excel_datasets.py` — the exporter (uses `analytics.fetch_df()` and `EXPORTS_DIR`)
+- `analytics.py` — provides `fetch_df()` and `EXPORTS_DIR`
+- `queries.sql` — named SQL blocks used by the exporter
+
+> Note: This section reuses the project’s existing environment; no extra library list here.
+
+### Usage
+
+Export **all** datasets (default output: `exports/analytics_data.xlsx`):
+```bash
+python export_excel_datasets.py
+
   
 
