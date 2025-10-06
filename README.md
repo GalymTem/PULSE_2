@@ -17,6 +17,9 @@ It demonstrates an end-to-end analytical pipeline:
 ## 📊 Main Analytics (Screenshots)
 ![Pie Chart](charts/01_pie_revenue_by_category.png)  
 ![Bar Chart](charts/02_bar_top_sellers_by_revenue.png)  
+![Bar Chart](charts/03_barh_avg_review_by_category.png)
+![Line daily revenue](charts/04_line_daily_revenue_2010_2014.png)
+![histogram](charts/05_hist_order_value.png)
 ![Horizontal Bar](charts/06_duration_by_genre_strip.png)  
 
 ---
