@@ -93,7 +93,7 @@ This repository includes a rich Excel exporter that pulls data via your existing
 
 
 ### Files
-- `export_excel_datasets.py` — the exporter (uses `analytics.fetch_df()` and `EXPORTS_DIR`)
+- `excel.py` — the exporter (uses `analytics.fetch_df()` and `EXPORTS_DIR`)
 - `analytics.py` — provides `fetch_df()` and `EXPORTS_DIR`
 - `queries.sql` — named SQL blocks used by the exporter
 
