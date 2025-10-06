@@ -84,7 +84,7 @@ This project relies on the following Python libraries:
 ### Installation
 
 You can install all dependencies with:
-```bash
+
 pip install pandas matplotlib plotly sqlalchemy psycopg2 openpyxl numpy
 
 ## Excel Data Export — Datasets + Summaries + Profiles
