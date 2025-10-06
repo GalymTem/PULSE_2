@@ -21,10 +21,6 @@ It demonstrates an end-to-end analytical pipeline:
 
 ---
 
-## 🧩 ER Diagram
-![ER Diagram](er/chinook-er-diagram.png)
-
----
 
 ## 📦 Dataset
 Public **Chinook Database** — a realistic model of a digital media store used here to simulate PULSE’s operational data.  
