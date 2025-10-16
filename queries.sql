@@ -101,3 +101,19 @@ JOIN "Customer" c ON c."CustomerId" = i."CustomerId"
 GROUP BY 1, 2
 ORDER BY 1, 2
 ;
+
+
+----------------------------------------------------------------
+
+-- name: heatmap_genre_country_revenue
+SELECT
+  g."Name"                  AS genre,
+  i."BillingCountry"        AS country,
+  SUM(il."Quantity" * il."UnitPrice") AS value   -- revenue
+FROM "Invoice" i
+JOIN "InvoiceLine" il ON il."InvoiceId" = i."InvoiceId"
+JOIN "Track" t        ON t."TrackId"    = il."TrackId"
+JOIN "Genre" g        ON g."GenreId"    = t."GenreId"
+GROUP BY 1, 2
+ORDER BY value DESC;
+
