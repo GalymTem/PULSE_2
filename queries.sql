@@ -147,3 +147,13 @@ JOIN "Artist" a  ON a."ArtistId" = al."ArtistId"
 JOIN "Genre"  g  ON g."GenreId"  = t."GenreId"
 GROUP BY 1,2
 ORDER BY revenue DESC;
+
+--------------------------------------------------------------
+-- name: wordcloud_top_tracks
+SELECT
+  t."Name" AS track,
+  COUNT(il."InvoiceLineId") AS sales_count
+FROM "InvoiceLine" il
+JOIN "Track" t ON t."TrackId" = il."TrackId"
+GROUP BY t."Name"
+ORDER BY sales_count DESC;
