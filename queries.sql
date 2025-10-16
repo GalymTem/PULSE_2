@@ -117,3 +117,18 @@ JOIN "Genre" g        ON g."GenreId"    = t."GenreId"
 GROUP BY 1, 2
 ORDER BY value DESC;
 
+----------------------------------------------------------------
+-- name: Sunburst with Geography
+SELECT
+  i."BillingCountry" AS country,
+  g."Name"          AS genre,
+  a."Name"          AS artist,
+  SUM(il."Quantity" * il."UnitPrice") AS value
+FROM "Invoice" i
+JOIN "InvoiceLine" il ON il."InvoiceId" = i."InvoiceId"
+JOIN "Track" t        ON t."TrackId"    = il."TrackId"
+JOIN "Album" al       ON al."AlbumId"   = t."AlbumId"
+JOIN "Artist" a       ON a."ArtistId"   = al."ArtistId"
+JOIN "Genre" g        ON g."GenreId"    = t."GenreId"
+GROUP BY 1,2,3
+ORDER BY value DESC;
