@@ -1,0 +1,44 @@
+slice_name: Total revenue per invoice
+description: null
+certified_by: null
+certification_details: null
+viz_type: world_map
+params:
+  datasource: 1__table
+  viz_type: world_map
+  slice_id: 1
+  entity: BillingCountry
+  country_fieldtype: name
+  metric: count
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: InvoiceDate
+    operator: TEMPORAL_RANGE
+    operatorId: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_goblyfldldk_1dbre7ts322
+  row_limit: 10000
+  max_bubble_size: '25'
+  color_picker:
+    r: 0
+    g: 122
+    b: 135
+    a: 1
+  color_by: metric
+  linear_color_scheme: superset_seq_1
+  color_scheme: supersetColors
+  y_axis_format: SMART_NUMBER
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"InvoiceDate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":["count"],"annotation_layers":[],"row_limit":10000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"1__table","viz_type":"world_map","slice_id":1,"entity":"BillingCountry","country_fieldtype":"name","metric":"count","adhoc_filters":[{"expressionType":"SIMPLE","subject":"InvoiceDate","operator":"TEMPORAL_RANGE","operatorId":"TEMPORAL_RANGE","comparator":"No
+  filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_goblyfldldk_1dbre7ts322"}],"row_limit":10000,"max_bubble_size":"25","color_picker":{"r":0,"g":122,"b":135,"a":1},"color_by":"metric","linear_color_scheme":"superset_seq_1","color_scheme":"supersetColors","y_axis_format":"SMART_NUMBER","extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: dd71f4c5-d39d-46c0-8299-3f7cead9e8d9
+version: 1.0.0
+dataset_uuid: d73d29a8-f89b-473c-adba-29a0073a11e5

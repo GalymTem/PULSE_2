@@ -1,0 +1,59 @@
+slice_name: heatmap_genre_country_revenue
+description: null
+certified_by: null
+certification_details: null
+viz_type: heatmap_v2
+params:
+  datasource: 9__table
+  viz_type: heatmap_v2
+  x_axis: genre
+  groupby: country
+  metric:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: value
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: null
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(value)
+    optionName: metric_rd377qkejie_xyv9scb507s
+  adhoc_filters: []
+  row_limit: 1000
+  normalize_across: heatmap
+  legend_type: continuous
+  linear_color_scheme: preset_seq_2
+  xscale_interval: -1
+  yscale_interval: -1
+  left_margin: auto
+  bottom_margin: auto
+  value_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+  x_axis_time_format: smart_date
+  show_legend: true
+  show_percentage: true
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":9,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"genre","label":"genre","expressionType":"SQL"},"country"],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"value","description":null,"expression":null,"filterable":true,"groupby":true,"id":null,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(value)","optionName":"metric_rd377qkejie_xyv9scb507s"}],"orderby":[],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"rank","options":{"metric":"SUM(value)"}}]}],"form_data":{"datasource":"9__table","viz_type":"heatmap_v2","x_axis":"genre","groupby":"country","metric":{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"value","description":null,"expression":null,"filterable":true,"groupby":true,"id":null,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(value)","optionName":"metric_rd377qkejie_xyv9scb507s"},"adhoc_filters":[],"row_limit":1000,"normalize_across":"heatmap","legend_type":"continuous","linear_color_scheme":"preset_seq_2","xscale_interval":-1,"yscale_interval":-1,"left_margin":"auto","bottom_margin":"auto","value_bounds":[null,null],"y_axis_format":"SMART_NUMBER","x_axis_time_format":"smart_date","show_legend":true,"show_percentage":true,"extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: cb863e68-ceee-4700-86db-6b9271cfdaa1
+version: 1.0.0
+dataset_uuid: f9c331db-8cc4-40ee-b074-8997d3c9b546
